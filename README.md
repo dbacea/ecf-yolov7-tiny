@@ -1,7 +1,6 @@
 # Official ECF-YOLOv7-tiny
 
-Implementation of paper - "ECF-YOLOv7-tiny: Improving feature fusion and the receptive field for lightweight object detectors".
-The code and models will be made available after the paper becomes publicly available.
+Implementation of paper - [ECF-YOLOv7-tiny: Improving feature fusion and the receptive field for lightweight object detectors](https://openaccess.thecvf.com/content/WACV2025/html/Bacea_ECF-YOLOv7-Tiny_Improving_Feature_Fusion_and_the_Receptive_Field_for_Lightweight_WACV_2025_paper.html)
 
 ## Performance 
 
@@ -12,7 +11,9 @@ MS COCO
 | YOLOv7-tiny | 416 | **35.2%** | **52.8%** | **37.3%** | 14.4 *fps* |
 | SE-YOLOv7-tiny | 416 | **34.8%** | **52.5%** | **36.6%** | 13.8 *fps* |
 | YOLOv9-t | 416 | **32.2%** | **46.5%** | **34.2%** | 7.1 *fps* |
-| YOLOv10-n | 416 | **32.6%** | **47.2%** | **35.0%** | - *fps* |
+| YOLOv10-n | 416 | **32.6%** | **47.2%** | **35.0%** | 14 *fps* |
+| YOLOv11-n | 416 | **32.5%** | **46.8%** | **34.7%** | 18 *fps* |
+| YOLOv12-n | 416 | **33.3%** | **48.2%** | **35.4%** | 12 *fps* |
 | **ECF-YOLOv7-tiny** | 416 | **38.2%** | **56.3%** | **40.7%** | 8.8 *fps* |
 | **ECF-YOLOv7-tiny-s** | 416 | **37.8%** | **56.0%** | **40.0%** | 9.3 *fps* |
 
@@ -123,6 +124,20 @@ python test.py --task speed --data data/coco.yaml --img 416 --batch 32 --conf 0.
 </details>
 
 Tested with: Python 3.7.13, Pytorch 1.11.0+cu116
+
+
+## Citation
+
+```
+@inproceedings{bacea2025ecf,
+  title={ECF-YOLOv7-Tiny: Improving Feature Fusion and the Receptive Field for Lightweight Object Detectors},
+  author={Bacea, Dan-Sebastian and Oniga, Florin},
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages={1577--1586},
+  year={2025},
+  organization={IEEE}
+}
+```
 
 ## Acknowledgements
 
